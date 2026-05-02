@@ -1,0 +1,86 @@
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (main)
+$ git branch
+* main
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (main)
+$ git pull
+Already up to date.
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (main)
+$ git checkout -b Feature-devops-may15release
+Switched to a new branch 'Feature-devops-may15release'
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git branch
+* Feature-devops-may15release
+  main
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Feature-devops-may15release
+
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git branch
+* Feature-devops-may15release
+  main
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git pull
+From https://github.com/Sachinsba/Projects
+ * [new branch]      Feature-devops-may15release -> origin/Feature-devops-may15release
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Feature-devops-may15release
+
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git status
+On branch Feature-devops-may15release
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Example1.class
+        Example1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git add Example1.java
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git commit -m "Example commit"
+[Feature-devops-may15release 4946316] Example commit
+ 1 file changed, 8 insertions(+)
+ create mode 100644 Example1.java
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git push -u origin Feature-devops-may15release)
+bash: syntax error near unexpected token `)'
+
+sachi@DESKTOP-F0NRM6E MINGW64 /g/GITHUB REPOS/Projects (Feature-devops-may15release)
+$ git push -u origin Feature-devops-may15release
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sachinsba/Projects.git
+   e51f8ba..4946316  Feature-devops-may15release -> Feature-devops-may15release
+branch 'Feature-devops-may15release' set up to track 'origin/Feature-devops-may15release'.
+
